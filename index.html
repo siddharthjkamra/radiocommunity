@@ -35,11 +35,17 @@
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </div>
-
-<div class="img-container thumbnail">
-<img src="images/radio.jpg">
-</div>         
-            
+<div data-role="carousel"
+     data-cls-controls="fg-cyan"
+     data-effect="slide"
+     data-controls="false"
+     data-bullets="false"
+     data-auto-start="true">
+    <div class="slide" data-cover="images/radio.jpg"
+         data-period="5000"></div>
+    <div class="slide" data-cover="images/radio2.jpg"
+         data-period="5000"></div>
+</div>
 </div>
 
 <script src="files/metro.min.js"></script>
