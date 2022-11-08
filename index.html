@@ -57,8 +57,8 @@
 </div>
 
   <select data-role="select" id="mySelect" class="mt-2">
-    <option value="1" data-url="getdata/english.html">English</option>
-    <option value="2" data-url="getdata/hindi.html">Hindi</option>
+    <option value="1" data-url="getdata/hindi.html">Hindi</option>
+    <option value="2" data-url="getdata/english.html">English</option>
     <option value="2" data-url="getdata/bengali.html">Bengali</option>
   </select>
 
@@ -78,7 +78,7 @@
 </div>
 <script>
 $(function() {
-  loadPage("getdata/english.html");
+  loadPage("getdata/hindi.html");
 
  $('#mySelect').on('change', function() {
     loadPage($(this).find(':selected').data('url'));
