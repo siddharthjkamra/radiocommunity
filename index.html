@@ -6,6 +6,8 @@
 <title>Radio Community India</title>
 <link rel="stylesheet" href="files/metro-all.min.css">
 <link href="files/red-alert.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-icons.min.css">
+<script src="files/jquery.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -17,7 +19,7 @@
 <li><a href="#" class="dropdown-toggle">Register</a>
 <ul class="d-menu" data-role="dropdown">
 <li><a href="/register/individual.html">Register as Individual</a></li>
-<li><a href="/register/club/index.html">Register as Club</a></li>
+<li><a href="/register/club.html">Register as Club</a></li>
 </ul>
 </li>
 
@@ -46,6 +48,39 @@
          data-period="5000"></div>
 </div>
 </div>
+
+  <select data-role="select" id="mySelect" class="mt-2">
+    <option value="1" data-url="getdata/english.html">English</option>
+    <option value="2" data-url="getdata/hindi.html">Hindi</option>
+    <option value="2" data-url="getdata/bengali.html">Bengali</option>
+  </select>
+
+<div id="welcome-page"></div>
+<ul data-role="listview" data-view="content" class="mt-2">
+<center><h3>Blogs</h3></center>
+<li data-icon="<span class='mif-news'>" data-caption="Be Ready for International Radio Fair 2023 in Bhubaneswar"></li>
+<li data-icon="<span class='mif-news'>" data-caption="Be Ready for International Radio Fair 2023 in Bhubaneswar"></li>
+<li data-icon="<span class='mif-news'>" data-caption="Be Ready for International Radio Fair 2023 in Bhubaneswar"></li>
+<li data-icon="<span class='mif-news'>" data-caption="Be Ready for International Radio Fair 2023 in Bhubaneswar"></li>
+<li data-icon="<span class='mif-news'>" data-caption="Be Ready for International Radio Fair 2023 in Bhubaneswar"></li>
+<li data-icon="<span class='mif-news'>" data-caption="Be Ready for International Radio Fair 2023 in Bhubaneswar"></li>
+</ul>
+
+<div class="p-5 bg-red fg-white text-center mt-2">
+© 2022 Radio Fair India - All rights reserved
+</div>
+<script>
+$(function() {
+  loadPage("getdata/english.html");
+
+ $('#mySelect').on('change', function() {
+    loadPage($(this).find(':selected').data('url'));
+ });
+});
+function loadPage(url) {
+  $("#welcome-page").load(url);
+}
+</script>
 
 </div>
 <script src="files/metro.min.js"></script>

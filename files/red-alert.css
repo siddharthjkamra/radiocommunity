@@ -30,8 +30,8 @@
   cursor: default;
 }
 body {
-  font-size: 16px;
   font-family: 'Inconsolata', monospace;
+  font-size: 16px;
   color: #000000;
   background-color: #ffffff;
 }
