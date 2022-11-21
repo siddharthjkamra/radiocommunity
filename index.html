@@ -17,10 +17,9 @@
 .container {display:none;}
 </style>
 </noscript>
-<div class="container">
-<div class="pos-relative app-bar-expand-md z-dropdown mt-2" data-role="appbar">
-<a href="" class="brand no-hover text-bold">Radio Community India</a>
- <ul class="app-bar-menu">
+<div class="pos-relative mb-2" data-role="appbar" data-expand-point="md">
+<a href="/" class="brand no-hover text-bold">Radio Community India</a>
+<ul class="app-bar-menu">
 <li><a href="/about.html">About</a></li>
 <li><a href="/register/index.html">Registration</a></li>
 
@@ -29,8 +28,6 @@
 <ul class="d-menu" data-role="dropdown">
 <li><a href="/reg/profile/index.html">Registered Members</a></li>
 <li><a href="/reg/club/index.html">Registered Clubs</a></li>
-<li class="divider"></li>
-<li><a href="/reg/deletion.html">Request of Deletion</a></li>
 </ul>
 </li>
 <li><a href="/stations/index.html">Radio Stations</a></li>
@@ -38,16 +35,13 @@
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </div>
-<div class="img-container thumbnail">
-<div data-role="carousel"
-     data-cls-controls="fg-cyan"
-     data-effect="slide"
-     data-controls="false"
-     data-bullets="false"
-     data-auto-start="true">
-<div class="slide" data-cover="images/radio.jpg" data-period="5000"></div>
-<div class="slide" data-cover="images/radio2.jpg" data-period="5000"></div>
-</div>
+
+<div class="container">
+
+<div class="img-container">
+<center>
+<img src="images/radio.jpg" style="max-width: 800px;">
+</center>
 </div>
 
 <select data-role="select" id="mySelect" class="mt-2">
@@ -72,7 +66,10 @@
 <li data-icon="<span class='mif-news'>" data-caption="Be Ready for International Radio Fair 2023 in Bhubaneswar"></li>
 </ul>
 -->
-<div class="p-5 bg-red fg-white text-center mt-2">
+
+</div>
+<div class="p-5 bg-black fg-white text-center mt-2">
+<img src="/images/rci_512-tp.png" alt="" width="100px"><br>
 © 2022 Radio Community India - All rights reserved
 </div>
 <script>
@@ -87,8 +84,6 @@ function loadPage(url) {
   $("#welcome-page").load(url);
 }
 </script>
-
-</div>
 <script src="files/metro.min.js"></script>
 </body>
 </html>
