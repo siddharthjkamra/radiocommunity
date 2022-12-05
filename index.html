@@ -17,6 +17,7 @@
 .container {display:none;}
 </style>
 </noscript>
+<div id="loading"></div>
 <div class="pos-relative mb-2 app-bar-expand-md" data-role="appbar" data-expand-point="md">
 <a href="/" class="brand no-hover text-bold">Radio Community India</a>
 <ul class="app-bar-menu">
@@ -85,6 +86,11 @@ $(function() {
 function loadPage(url) {
   $("#welcome-page").load(url);
 }
+</script>
+<script>
+jQuery(document).ready(function() {
+    jQuery('#loading').fadeOut(2000);
+});
 </script>
 <script src="files/metro.min.js"></script>
 </body>
