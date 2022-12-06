@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-icons.min.css">
 <script src="files/jquery.min.js"></script>
 </head>
-<body>
+<body onload="myFunction()">
 <noscript>
 <p>Please enable JavaScript in your web browser!</p>
 </div>
@@ -17,7 +17,8 @@
 .container {display:none;}
 </style>
 </noscript>
-<div id="loading"></div>
+<div id="loader"><img src="images/rci_logo.png" alt="logo"></div>
+<div style="display:none;" id="HideAll" class="animate-bottom">
 <div class="pos-relative mb-2 app-bar-expand-md" data-role="appbar" data-expand-point="md">
 <a href="/" class="brand no-hover text-bold">Radio Community India</a>
 <ul class="app-bar-menu">
@@ -88,9 +89,16 @@ function loadPage(url) {
 }
 </script>
 <script>
-jQuery(document).ready(function() {
-    jQuery('#loading').fadeOut(2000);
-});
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 4000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("HideAll").style.display = "block";
+}
 </script>
 <script src="files/metro.min.js"></script>
 </body>
